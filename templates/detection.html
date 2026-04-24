@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FESAMR</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎭 Mood Music Recommender</h1>
+
+        <div class="card">
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button id="cameraBtn">📷 Camera</button>
+                <button id="uploadBtn">📁 Upload</button>
+            </div>
+
+            <input type="file" id="imageUpload" accept="image/*" hidden>
+
+            <!-- Preview -->
+            <div class="previewBox">
+                <img id="previewImage">
+                <video id="video" autoplay></video>
+            </div>
+
+            <canvas id="canvas" hidden></canvas>
+
+            <!-- Analyze -->
+            <button id="analyzeBtn" class="analyze">Analyze Emotion</button>
+
+        </div>
+
+        <!-- Results -->
+        <div id="resultBox" class="result"></div>
+
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>

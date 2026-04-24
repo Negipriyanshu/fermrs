@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    background: url("/static/images/background.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+    color: white;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    padding: 40px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Buttons */
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ff7e5f;
+    color: white;
+    font-weight: bold;
+}
+
+.analyze {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Preview */
+.previewBox {
+    margin-top: 15px;
+}
+
+.previewBox img,
+.previewBox video {
+    width: 200px;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Result */
+.result {
+    margin-top: 30px;
+}
+
+
+/* Songs container */
+.songs-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Hide scrollbar (optional) */
+.songs-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Song card */
+.song {
+    min-width: 200px;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    text-align: left;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.song:hover {
+    transform: scale(1.05);
+}
